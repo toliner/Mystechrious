@@ -2,11 +2,13 @@ package dev.toliner.industrialmod
 
 import net.toliner.korgelin.api.KotlinMod
 import net.toliner.korgelin.container.KotlinModLoadingContext
-import java.util.logging.LogManager
+import org.apache.logging.log4j.LogManager
 
-@KotlinMod("industrialmod")
+@KotlinMod(IndustrialMod.modId)
 object IndustrialMod {
-    private val logger = LogManager.getLogManager()!!
+
+    val logger = LogManager.getLogger("Industrial Mod")
+    const val modId = "industrialmod"
 
     init {
         KotlinModLoadingContext.get().eventBus.apply {
