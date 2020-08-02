@@ -29,7 +29,7 @@ repositories {
 
 dependencies {
     "minecraft"("net.minecraftforge:forge:1.15.2-31.2.0")
-    implementation("net.toliner.korgelin:korgelin-1.15:1.1.1-1.3.71")
+    implementation("net.toliner.korgelin:korgelin-1.15:1.1.3-1.3.71")
 }
 
 configure<net.minecraftforge.gradle.common.util.MinecraftExtension> {
