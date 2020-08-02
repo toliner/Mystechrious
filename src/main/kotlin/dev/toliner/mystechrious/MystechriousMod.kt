@@ -1,4 +1,4 @@
-package dev.toliner.industrialmod
+package dev.toliner.mystechrious
 
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
@@ -7,11 +7,12 @@ import net.toliner.korgelin.api.KotlinMod
 import net.toliner.korgelin.container.KotlinModLoadingContext
 import org.apache.logging.log4j.LogManager
 
-@KotlinMod(IndustrialMod.modId)
-object IndustrialMod {
+@KotlinMod(MystechriousMod.modId)
+object MystechriousMod {
 
-    val logger = LogManager.getLogger("Industrial Mod")
-    const val modId = "industrialmod"
+    val logger = LogManager.getLogger("Mystechrious")
+    const val modId = "mystechrious"
+    const val modName = "Mystechrious"
 
     init {
         KotlinModLoadingContext.get().eventBus.apply {
@@ -20,6 +21,6 @@ object IndustrialMod {
     }
 
     val itemGroup: ItemGroup = object : ItemGroup(modId) {
-        override fun createIcon(): ItemStack { return ItemStack(Items.DIAMOND) }
+        override fun createIcon() = ItemStack(Items.DIAMOND)
     }
 }

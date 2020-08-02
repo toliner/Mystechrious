@@ -1,9 +1,9 @@
-package dev.toliner.industrialmod
+package dev.toliner.mystechrious
 
 import net.toliner.korgelin.api.EnumForgeRegistryType
 import net.toliner.korgelin.api.KotlinModContentRegistry
 
-@KotlinModContentRegistry(IndustrialMod.modId, EnumForgeRegistryType.ITEM)
+@KotlinModContentRegistry(MystechriousMod.modId, EnumForgeRegistryType.ITEM)
 object ItemRegistry {
 
 }

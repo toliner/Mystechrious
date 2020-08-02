@@ -19,7 +19,7 @@ plugins {
 }
 
 version = "0.0.1"
-group = "dev.toliner.industrial"
+group = "dev.toliner.mystechrious"
 
 repositories {
     mavenCentral()
@@ -41,7 +41,7 @@ configure<net.minecraftforge.gradle.common.util.MinecraftExtension> {
             property("forge.logging.console.level", "debug")
 
             mods {
-                create("industrial") {
+                create("Mystechrious") {
                     source(sourceSets.main.get())
                 }
             }
@@ -52,7 +52,7 @@ configure<net.minecraftforge.gradle.common.util.MinecraftExtension> {
             property("forge.logging.console.level", "debug")
 
             mods {
-                create("industrial") {
+                create("Mystechrious") {
                     source(sourceSets.main.get())
                 }
             }
@@ -65,7 +65,7 @@ configure<net.minecraftforge.gradle.common.util.MinecraftExtension> {
             args("--mod", "industrial", "--all", "--output", file("src/generated/resources/"))
 
             mods {
-                create("industrial") {
+                create("Mystechrious") {
                     source(sourceSets.main.get())
                 }
             }
@@ -90,12 +90,12 @@ tasks {
         manifest {
             attributes(
                 mapOf(
-                    "Specification-Title" to "examplemod",
-                    "Specification-Vendor" to "examplemodsareus",
+                    "Specification-Title" to "mystechrious",
+                    "Specification-Vendor" to "tolinerとゆかいな仲間たち",
                     "Specification-Version" to "1", // We are version 1 of ourselves
                     "Implementation-Title" to project.name,
                     "Implementation-Version" to archiveVersion.get(),
-                    "Implementation-Vendor" to "examplemodsareus",
+                    "Implementation-Vendor" to "tolinerとﾂｲｯﾀｰ友達",
                     "Implementation-Timestamp" to SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").format(Date())
                 )
             )
